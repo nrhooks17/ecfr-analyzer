@@ -1,0 +1,110 @@
+# Go backend files
+backend/bin/
+backend/*.exe
+backend/*.exe~
+backend/*.dll
+backend/*.so
+backend/*.dylib
+backend/test
+backend/*.out
+backend/go.work
+backend/go.work.sum
+
+# Go coverage files
+backend/*.prof
+backend/coverage.txt
+backend/coverage.out
+
+# Go vendor directory (if using go modules, this might not be needed)
+backend/vendor/
+
+# Go IDE files
+backend/.vscode/
+backend/.idea/
+backend/*.swp
+backend/*.swo
+
+# React/TypeScript frontend files
+frontend/node_modules/
+frontend/.pnp
+frontend/.pnp.js
+
+# Frontend testing
+frontend/coverage/
+
+# Frontend production build
+frontend/build/
+frontend/dist/
+
+# Frontend misc
+frontend/.DS_Store
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Frontend logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Frontend IDE files
+frontend/.vscode/
+frontend/.idea/
+
+# TypeScript cache
+frontend/*.tsbuildinfo
+
+# Next.js (if used)
+frontend/.next/
+frontend/out/
+
+# Vite (if used)
+frontend/dist/
+frontend/.vite/
+
+# Common system files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Docker
+.dockerignore
+
+# Logs
+logs/
+*.log
+
+# Database files (if any local DBs)
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Backup files
+*.bak
+*.backup
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

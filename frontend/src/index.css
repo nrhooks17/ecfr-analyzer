@@ -1,0 +1,168 @@
+/* Import USWDS CSS */
+@import '@uswds/uswds/css/uswds.min.css';
+
+/* Custom styles for eCFR Analyzer */
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #1b1b1b;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* Custom utility classes */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* Loading screen specific styles */
+.loading-screen {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-content {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Progress bar improvements */
+.usa-progress {
+  height: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.usa-progress__bar {
+  height: 100%;
+  background: linear-gradient(90deg, #005ea2, #0066cc);
+  transition: width 0.5s ease;
+  border-radius: 0.25rem;
+}
+
+/* Card enhancements */
+.usa-card {
+  border: 1px solid #c9c9c9;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.usa-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Table improvements */
+.usa-table th,
+.usa-table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #c9c9c9;
+}
+
+.usa-table--striped tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+/* Button improvements */
+.usa-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.usa-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Chart container */
+.recharts-wrapper {
+  margin: 1rem 0;
+}
+
+/* Alert improvements */
+.usa-alert {
+  border-left: 4px solid;
+  border-radius: 0.25rem;
+}
+
+.usa-alert--info {
+  border-left-color: #005ea2;
+  background-color: #e7f6f8;
+}
+
+.usa-alert--success {
+  border-left-color: #00a91c;
+  background-color: #ecf3ec;
+}
+
+.usa-alert--warning {
+  border-left-color: #ffbe2e;
+  background-color: #faf3d1;
+}
+
+.usa-alert--error {
+  border-left-color: #d54309;
+  background-color: #f4e3db;
+}
+
+/* Navigation improvements */
+.usa-nav__primary .usa-nav__link {
+  text-decoration: none;
+  color: #005ea2;
+  font-weight: 500;
+}
+
+.usa-nav__primary .usa-nav__link:hover {
+  color: #1a4480;
+  background-color: #f0f0f0;
+}
+
+/* Responsive utilities */
+@media (max-width: 64em) {
+  .grid-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .usa-banner,
+  .usa-header,
+  .usa-button,
+  .usa-nav {
+    display: none !important;
+  }
+  
+  .usa-card {
+    border: 1px solid #000;
+    box-shadow: none;
+  }
+}

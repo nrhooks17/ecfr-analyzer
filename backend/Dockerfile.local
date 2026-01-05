@@ -1,0 +1,24 @@
+FROM golang:1.24-alpine
+
+WORKDIR /app
+
+# Copy go mod files
+COPY backend/go.mod backend/go.sum ./
+
+# Download dependencies
+RUN go mod download
+
+# Copy backend source code (now includes the shell script)
+COPY backend/ .
+
+# Make the shell script executable
+RUN chmod +x calculate_checksums.sh
+
+# Build the checksum calculation binary for local development (static)
+RUN CGO_ENABLED=0 go build -o calculate_checksums ./cmd/calculate_checksums
+
+# Expose port
+EXPOSE 8080
+
+# Run go run directly with source mounted as volume
+CMD ["go", "run", "./cmd/server"]

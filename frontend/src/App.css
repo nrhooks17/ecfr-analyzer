@@ -1,0 +1,16 @@
+.App {
+  min-height: 100vh;
+}
+
+.usa-banner__header-flag {
+  width: 16px;
+  height: auto;
+}
+
+.usa-logo__text {
+  font-size: 1.25rem;
+}
+
+.usa-section {
+  padding: 2rem 0;
+}
