@@ -13,7 +13,6 @@ A web application for analyzing and visualizing the electronic Code of Federal R
 
 2. **Import CFR data:**
    ```bash
-   cd backend
    ./import_data.sh
    ```
 
